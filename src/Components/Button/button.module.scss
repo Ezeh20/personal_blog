@@ -1,0 +1,32 @@
+@use '../../scss/global/colors'as *;
+@use '../../scss/utils/functions'as fn;
+@use '../../scss/global/_border.scss'as *;
+@use '../../scss/utils/fonts'as *;
+
+.button {
+    font-size: fn.rem(16);
+    font-weight: 300;
+    border-radius: $small;
+    font-family: $poppins;
+    background-color: transparent;
+    transition: all 500ms ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.primary {
+        background-color: $black;
+        padding: .5rem 1rem;
+        color: $bg-color;
+        &:hover{
+            background-color: #333
+        }
+    }
+
+    &.lowFi{
+        font-weight: 500;
+        font-size:fn.rem(18);
+        color: $secondary-color;
+    }
+}
